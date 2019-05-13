@@ -596,8 +596,14 @@ article {
 .contacts li a.skype:hover {
   color: #00aff0;
 }
+.contacts li a.twitter:hover {
+  color:deepskyblue;
+}
 .contacts li a.telegram:hover {
   color: #0088cc;
+}
+.contacts li a.instagram:hover{
+  color: crimson
 }
 .contacts li a.phone:hover {
   color: dimgrey;
@@ -610,6 +616,7 @@ article {
   height: 1.1428rem;
   vertical-align: text-bottom;
 }
+
 
 @media only screen and (max-width: 767px) {
   .name,
