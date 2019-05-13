@@ -1,8 +1,8 @@
 ::-moz-selection {
-  background: yellow;
+  background: lightgrey;
 }
 ::selection {
-  background: yellow;
+  background: lightgrey;
 }
 *,
 *:before,
@@ -141,13 +141,27 @@ ol.inverted > li:before {
   margin-top: calc(0.4285rem / 2);
 }
 a {
-  color: blue;
+  color: cornflowerblue;
   background-color: transparent;
   text-decoration: none;
 }
 a[rel="external"]:not(.label):hover,
 a.language:hover span {
   text-decoration: underline;
+}
+a img { display:none; }
+a:hover img { display:block; }
+
+span {
+  position: relative;
+}
+
+span.imgText img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
 }
 
 /* Prevent `sub` and `sup` elements from affecting the line height in all browsers */
@@ -519,7 +533,7 @@ article {
 
 /* Divider */
 .divider {
-  border-top: 1px solid rgba(222, 222, 222, 1);
+  border-top: 1px solid rgb(222, 222, 222);
 }
 .divider.fat {
   border-top: 0.3571428571428571em solid rgba(10, 10, 10, 1);
@@ -539,7 +553,7 @@ article {
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
   display: block;
-  float: left;
+  float: bottom;
   font-size: 0.78571429rem;
   font-weight: 600;
   line-height: 1;
@@ -550,7 +564,7 @@ article {
 }
 .labels > .label:hover {
   background-color: #e0e0e0;
-  color: rgba(0, 0, 0, 0.8);
+  color: crimson;
 }
 .labels > .label:not(:last-child) {
   margin-right: 0.5em;
@@ -591,7 +605,7 @@ article {
   color: dimgrey;
 }
 .contacts li a.mail:hover {
-  color: dimgrey;
+  color: crimson;
 }
 .contacts li a.skype:hover {
   color: #00aff0;
@@ -603,7 +617,7 @@ article {
   color: #0088cc;
 }
 .contacts li a.instagram:hover{
-  color: crimson
+  color: deeppink
 }
 .contacts li a.phone:hover {
   color: dimgrey;
@@ -823,6 +837,22 @@ li.bordered > ul > details > div {
 }
 .color.chartreuse:before {
   background-color: chartreuse;
+}
+
+/* Gif player */
+
+.gifplayer {
+  width: 5px;
+  height: 5px;
+  font-weight: bold;
+}
+
+.hiddendiv {
+  width: auto;
+  height: auto;
+  float: left;
+  display: none;
+  border: none;
 }
 
 /* Audio button */
