@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Résumé</title>
     <link rel="stylesheet" href="assets/stylesheets/base_modified.css">
     <link rel="icon" href="assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
   </head>
   <body>    
       <main>
@@ -14,10 +17,19 @@
               <div class="row">
                 <div class="three wide center aligned column">
                     <div class="avatar-wrapper">
-                        <object class="avatar" data="./assets/images/Ryu_avatar.svg" role="img" aria-label="Ryu profile pic">
-                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="avatar" viewBox="3 0 99.1 127.4" version="1.1"></svg>
-                        </object>
-                    </div>
+                      <div class="dissolve-avatar">
+                        <img class="avatar" src="assets/images/ryu_avatar.webp"
+                        data-src-600px="assets/images/ryu_avatar_600px.webp"
+                        data-src-800px="assets/images/ryu_avatar_800px.webp"
+                        alt="">
+                        <div class="overlay">
+                          <img class="avatar" src="assets/images/evil_ryu_avatar.webp"
+                          data-src-600px="assets/images/evil_ryu_avatar_600px.webp"
+                          data-src-800px="assets/images/evil_ryu_avatar_800px.webp"
+                        alt="">
+                        </div>
+                      </div>
+                  </div>
                 </div>
                 <div class="thirteen wide column">
                   <div class="stackable grid">
