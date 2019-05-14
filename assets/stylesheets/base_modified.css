@@ -13,13 +13,13 @@ html {
   font-size: 14px;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 html,
 body {
   margin: 0;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.87);  
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -269,7 +269,8 @@ article {
   padding: 3em;
   background: white;
   box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
-  transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;  
+  cursor:url("hadoken_cursor.png"), auto;
 }
 .page[style^="border-color"] {
   padding: 4.5em;
@@ -286,7 +287,7 @@ article {
   border-width: 1em;
   border-style: solid;
   pointer-events: none;
-  transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;  
 }
 @media only screen {
   .page:hover {
@@ -531,6 +532,20 @@ article {
   }
 }
 
+.avatar-wrapper .evilryu{
+  display:none;
+}
+
+.avatar-wrapper:hover .goodryu{
+  display: none;
+}
+
+.avatar-wrapper:hover .evilryu{
+  display: block;
+}
+
+
+
 /* Divider */
 .divider {
   border-top: 1px solid rgb(222, 222, 222);
@@ -564,7 +579,7 @@ article {
 }
 .labels > .label:hover {
   background-color: #e0e0e0;
-  color: crimson;
+  color: crimson;  
 }
 .labels > .label:not(:last-child) {
   margin-right: 0.5em;
@@ -837,22 +852,6 @@ li.bordered > ul > details > div {
 }
 .color.chartreuse:before {
   background-color: chartreuse;
-}
-
-/* Gif player */
-
-.gifplayer {
-  width: 5px;
-  height: 5px;
-  font-weight: bold;
-}
-
-.hiddendiv {
-  width: auto;
-  height: auto;
-  float: left;
-  display: none;
-  border: none;
 }
 
 /* Audio button */

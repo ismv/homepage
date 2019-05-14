@@ -1,4 +1,4 @@
-#!C:/Program\ Files/git/usr/bin/sh.exe
+#!C:\Program\ Files\Git\bin/sh.exe
 if workbox generateSW workbox-config.js ; then
   git add sw.js
   exit 0
